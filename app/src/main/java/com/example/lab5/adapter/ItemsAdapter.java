@@ -1,6 +1,7 @@
 package com.example.lab5.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.lab5.R;
+import com.example.lab5.ativity.CustomActivity;
+import com.example.lab5.ativity.CustomListViewActivity;
 import com.example.lab5.model.Item;
 
 
@@ -77,6 +80,7 @@ public class ItemsAdapter extends BaseAdapter {
                     Toast.makeText(context, item.getName(), Toast.LENGTH_SHORT).show();
                     positionSelect = position;
                     notifyDataSetChanged();
+
                 }
             });
             if(positionSelect == position) {
