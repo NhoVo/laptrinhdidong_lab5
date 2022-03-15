@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.lab5.model.Item;
-import com.example.lap4.R;
+import com.example.lab5.R;
 
 import java.util.List;
 
@@ -53,7 +53,7 @@ public class ItemsAdapter extends BaseAdapter {
         if(convertView == null) {
             convertView = LayoutInflater.from(parent.getContext()).inflate(idLayout, parent, false);
         }
-        ImageView imgImage = (ImageView) convertView.findViewById(com.example.lap4.R.id.imageView);
+        ImageView imgImage = (ImageView) convertView.findViewById(R.id.imageView);
         TextView txtName = (TextView) convertView.findViewById(R.id.name);
         TextView txtgia = (TextView) convertView.findViewById(R.id.gia);
         final ConstraintLayout constraintLayout = (ConstraintLayout) convertView.findViewById(R.id.idConconstraintlayout);

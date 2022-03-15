@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lab5.adapter.ItemsAdapter;
 import com.example.lab5.model.Item;
-import com.example.lap4.R;
+import com.example.lab5.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,10 @@
 package com.example.lab5.ativity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.annotation.Nullable;
@@ -34,5 +37,18 @@ public class CustomListViewActivity extends AppCompatActivity {
 
         ItemsAdapter adapter = new ItemsAdapter(this,R.layout.item_custom_list_view, listItems);
         lstView.setAdapter(adapter);
+// add event
+        lstView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(CustomListViewActivity.this, Customview.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("id", listItems.get(i).getId());
+                bundle.putString("name", listItems.get(i).getName());
+                bundle.putString("gia", listItems.get(i).getGia());
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 }
