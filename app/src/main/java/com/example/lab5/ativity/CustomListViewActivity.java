@@ -22,7 +22,7 @@ public class CustomListViewActivity extends AppCompatActivity {
     private List<Item> listItems;
     private ListView lstView;
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_list_view_activity);
 
@@ -37,18 +37,5 @@ public class CustomListViewActivity extends AppCompatActivity {
 
         ItemsAdapter adapter = new ItemsAdapter(this,R.layout.item_custom_list_view, listItems);
         lstView.setAdapter(adapter);
-// add event
-        lstView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(CustomListViewActivity.this, Customview.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("id", listItems.get(i).getId());
-                bundle.putString("name", listItems.get(i).getName());
-                bundle.putString("gia", listItems.get(i).getGia());
-                intent.putExtras(bundle);
-                startActivity(intent);
-            }
-        });
     }
 }
