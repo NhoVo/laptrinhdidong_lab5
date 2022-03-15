@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#9C9292"
-    tools:context=".MainActivity">
+    tools:context=".ativity.CustomListViewActivity">
 
 
     <TextView
@@ -100,8 +100,9 @@
 
     <ListView
         android:id="@+id/listview"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="497dp"
+        android:paddingTop="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

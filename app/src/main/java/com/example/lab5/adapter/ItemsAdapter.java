@@ -61,6 +61,7 @@ public class ItemsAdapter extends BaseAdapter {
         final Item item = listItems.get(position);
         if(listItems != null && !listItems.isEmpty()) {
             txtName.setText(item.getName());
+            txtgia.setText(item.getGia());
             int idItem = item.getId();
             switch (idItem) {
                 case 1: imgImage.setImageResource(R.drawable.donut_yellow_1); break;
@@ -84,6 +85,6 @@ public class ItemsAdapter extends BaseAdapter {
                 constraintLayout.setBackgroundColor(Color.WHITE);
             }
         }
-        return null;
+        return convertView;
     }
 }

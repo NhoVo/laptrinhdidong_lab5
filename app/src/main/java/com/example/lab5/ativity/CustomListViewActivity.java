@@ -21,7 +21,7 @@ public class CustomListViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_custom_list_view);
+        setContentView(R.layout.custom_list_view_activity);
 
         lstView = findViewById(R.id.listview);
         listItems = new ArrayList<>();
