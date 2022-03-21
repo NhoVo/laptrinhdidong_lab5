@@ -9,23 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab5">
-        <!-- <activity -->
-        <!-- android:name=".activity.CustomGridViewActivity" -->
-        <!-- android:exported="true" > -->
         <activity
-            android:name=".ativity.Customview"
-            android:exported="false" />
+            android:name=".ativity.Customs_list_view_activity2"
+            android:exported="false"/>
         <activity
-            android:name=".ativity.CustomListViewActivity"
+            android:name=".ativity.Customs_listview_activity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

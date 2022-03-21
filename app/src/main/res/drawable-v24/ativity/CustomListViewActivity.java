@@ -7,8 +7,6 @@ import android.widget.ListView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.lab5.adapter.ItemsAdapter;
-import com.example.lab5.model.Item;
 import com.example.lab5.R;
 
 import java.util.ArrayList;

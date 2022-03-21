@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.example.lab5.model.Item;
 import com.example.lab5.R;
 
 import java.util.List;

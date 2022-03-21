@@ -1,14 +1,16 @@
 package com.example.lab5.model;
 
 public class Item {
-    private int id;
-    private String name;
-    private String gia;
+   private int id;
+   private int img;
+   private String names;
+   private String price;
 
-    public Item(int id, String name, String gia) {
+    public Item(int id, int img, String names, String price) {
         this.id = id;
-        this.name = name;
-        this.gia = gia;
+        this.img = img;
+        this.names = names;
+        this.price = price;
     }
 
     public int getId() {
@@ -19,19 +21,27 @@ public class Item {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getImg() {
+        return img;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setImg(int img) {
+        this.img = img;
     }
 
-    public String getGia() {
-        return gia;
+    public String getNames() {
+        return names;
     }
 
-    public void setGia(String gia) {
-        this.gia = gia;
+    public void setNames(String names) {
+        this.names = names;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }
